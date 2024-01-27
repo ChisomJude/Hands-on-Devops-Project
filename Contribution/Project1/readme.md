@@ -12,7 +12,7 @@ Checkout to the branch using the following:
 git clone https://github.com/ChisomJude/Hands-on-Devops-Project.git
 git checkout main  # Switch to the main branch
 git pull origin main  # Pull the latest changes from the remote main branch
-git checkout -b <new-branch-name> #your branchname should be in this format yourname_surname
+git checkout -b <new-branch-name> #your branch name should be in this format yourname_surname
 ```
 1. Navigate to the project folder contribution/project1 `cd contribution/project1`
 2. Create a folder with your **name_surname** eg Chisom_Jude, if such name already exists,add your middlename eg Mike_Ade_Ola
@@ -27,6 +27,8 @@ git checkout -b <new-branch-name> #your branchname should be in this format your
    git merge origin/main
    git push -u origin <new-branch-name>
    ```
-7. Navigate to github, confirm your forked branch was updated, and send in a pull request to the master of the main branch
+7. Navigate to GitHub, confirm your forked branch was updated, and send in a pull request to the master of the main branch
 
-For more explanation - watch [SCA Lagos Project with First Contribution](https://www.youtube.com/watch?v=7hpMeh68f10&t=73s)
+For more explanation - watch [SCA Lagos Project with First Contribution](https://www.youtube.com/watch?v=7hpMeh68f10&t=73s) 
+
+If you encounter any challenges or need help drop a message on the group chat or fill the project check-in form
