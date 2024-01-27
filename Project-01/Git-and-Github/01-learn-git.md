@@ -23,14 +23,16 @@ GitHub is a web-based platform that provides hosting for software development pr
 **Visibility:** GitHub repositories are often public, allowing others to view, fork, and contribute to projects.
 
 #### Resources  
+[Git Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk&t=19s)
 [Git and Github Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+
 
 #### Hands-on 
 **Step-One**
 - Create a repository
 - Clone to your PC using the VSCode Editor
 - Create  A file - mytext.md
-- Open mytext.md and Add some recently used Git Commands, save and push to github
+- Open mytext.md and Add some recently used Git Commands, save and push to GitHub
 - Checks complete when what you have on GitHub is the same as what you have on the cloud
 
 **Step two**
