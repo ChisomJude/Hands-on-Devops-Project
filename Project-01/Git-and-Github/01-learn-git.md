@@ -24,3 +24,18 @@ GitHub is a web-based platform that provides hosting for software development pr
 
 #### Resources  
 [Git and Github Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+
+#### Hands-on 
+**Step-One**
+- Create a repository
+- Clone to your PC using the VSCode Editor
+- Create  A file - mytext.md
+- Open mytext.md and Add some recently used Git Commands, save and push to github
+- Checks complete when what you have on GitHub is the same as what you have on the cloud
+
+**Step two**
+- On your local, create a branch,
+- On the new branch, add commands used to create a branch and push it to the new branch
+- Check complete when you can see the new branch and file on GitHub
+
+  **Remember to Star this Repo**
