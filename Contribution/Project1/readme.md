@@ -1,7 +1,11 @@
 ### How to Add your Project One Submission
-Fork this repo 
 
-On your VScode Terminal clone your forked repo and create a branch. 
+Fork this repo 
+![image](https://github.com/ChisomJude/Hands-on-Devops-Project/assets/47423151/68bec712-8f5e-481f-b081-0de264ebbf0b)
+- Pointer 1 - fork a repo
+- Pointer 2 - Star a Repo
+  
+On your VScode Terminal, clone your forked repo and create a branch. 
 Checkout to the branch using the following:
 
 ```git
@@ -23,4 +27,6 @@ git checkout -b <new-branch-name> #your branchname should be in this format your
    git merge origin/main
    git push -u origin <new-branch-name>
    ```
-7. Navigate to github, confirm your cloned branch is updated and send in a pull request to the master of the main branch
+7. Navigate to github, confirm your forked branch was updated, and send in a pull request to the master of the main branch
+
+For more explanation - watch [SCA Lagos Project with First Contribution](https://www.youtube.com/watch?v=7hpMeh68f10&t=73s)
