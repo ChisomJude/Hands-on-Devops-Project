@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This guide is designed for beginners who are new to Linux and want to get started with the basics. First it is good to understand that Linux is an open-source operating system kernel first created by Linus Torvalds in 1991. It is the foundation of many different operating systems. There are different distributions of the Linux OS, but the popular ones are **UBUNTU and CENTOS**
+This guide is designed for beginners who are new to Linux and want to get started with the basics. First, it is good to understand that Linux is an open-source operating system kernel first created by Linus Torvalds in 1991. It is the foundation of many different operating systems. There are different distributions of the Linux OS, but the popular ones are **UBUNTU and CENTOS**
 
-Ubuntu is a popular Linux distribution that aims to provide a user-friendly experience while being powerful and versatile. It's based on Debian, another well-known Linux distribution. Ubuntu uses the Advanced Package Tool (APT) for package management. You can use commands like `apt update`, `apt install`, and `apt remove` to manage software packages. Ubuntu also has alarge and active community makes it easy to find support and resources online. Ubuntu forums and documentation are great places to seek help. For our HandOns we will be using **Ubuntu 20.04 or 22.04**
+Ubuntu is a popular Linux distribution that aims to provide a user-friendly experience while being powerful and versatile. It's based on Debian, another well-known Linux distribution. Ubuntu uses the Advanced Package Tool (APT) for package management. You can use commands like `apt update`, `apt install`, and `apt remove` to manage software packages. Ubuntu also has a large and active community makes it easy to find support and resources online. Ubuntu forums and documentation are great places to seek help. For our HandOns we will be using **Ubuntu 20.04 or 22.04**
 
 ## Terminal and Command Line
 
@@ -21,9 +21,9 @@ In Linux, you interact with the system using a command-line interface (CLI). The
 - `mv`: Move or rename files or directories.
 - `rm`: Remove files or directories
 - `cat`: Read the content of a file
-- `nano` or `vi` : Opens the content of a file in an editor mode. There are text editors and have different command used to manage them but this project will use `nano` because it is a begineer-friendly option. you can easily use the  Ctrl+O for write-out, Ctrl+S to save and  Ctrl+X for exit the editor mode
+- `nano` or `vi`: Opens the content of a file in an editor mode. There are text editors and different commands used to manage them but this project will use `nano` because it is a beginner-friendly option. you can easily use the  Ctrl+O for write-out, Ctrl+S to save and  Ctrl+X for exit the editor mode
 
-Please note that some of these command may require you to add one or more flag eg `-a`  `-r` to archieve a desired activity. Google is your friend. 
+Please note that some of these commands may require you to add one or more flags eg `-a`  `-r` to achieve a desired activity. Google is your friend. 
 
 Flags and options are used to modify the behavior of a command. They are specified after the command and are preceded by a hyphen (-). Options can be single-character (short options) or full words (long options), and they are used to customize how a command operates.
 
@@ -39,6 +39,6 @@ $ cd NewFolder
 $ touch newfile.txt
 
 ```
-It good to mention that you cant learn linux by just reading , lets dive on to HandsOn.
-You will need to spin up an Ubuntu Server from AWS or Azure 
-See Steps here. 
+It is good to mention that you can't learn Linux by just reading, let's dive on to HandsOn.
+You will need to spin up an Ubuntu Server from a Cloud Provider (AWS or Azure) or a Virtual Bo 
+See the Steps here. 
