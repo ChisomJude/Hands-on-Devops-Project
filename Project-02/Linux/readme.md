@@ -40,5 +40,30 @@ $ touch newfile.txt
 
 ```
 It is good to mention that you can't learn Linux by just reading, let's dive on to HandsOn.
-You will need to spin up an Ubuntu Server from a Cloud Provider (AWS or Azure) or a Virtual Bo 
-See the Steps here. 
+You will need to spin up an **Ubuntu Server** from a Cloud Provider (AWS or Azure) or a Virtual Box. I will be using AWS EC2 to spin up Ubuntu 20.04  For a Guide on what option to go for Click to See [Resources](#resources) 
+
+
+## Handson Project for Linux
+In this project, we will be working on a LEMP stack project. LEMP means - LEMP stands for Linux, Nginx (pronounced "engine-x"), MySQL (or MariaDB), and PHP. 
+
+What will you need for this project:
+- Ubuntu Server
+- Install Nginx
+- Install MySQL
+- install Php
+- Your Web Files
+
+For a Guide on what option to go for Click to See [Resources](#resources) 
+  
+
+
+
+
+
+## Resources 
+- Linux Commands: 
+  - https://www.youtube.com/watch?v=gd7BXuUQ91w
+- Setting Up VM in Azure
+- Setting Up VM in AWS
+- Setting up Ubuntu Box in Virtual Box
+- Project: https://blog.chisomjude.net/how-to-set-up-a-lemp-stack-for-your-web-project
