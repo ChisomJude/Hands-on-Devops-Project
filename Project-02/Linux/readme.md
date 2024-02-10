@@ -65,5 +65,6 @@ For a Guide on what option to go for Click to See [Resources](#resources)
   - https://www.youtube.com/watch?v=gd7BXuUQ91w
 - Setting Up VM in Azure
 - Setting Up VM in AWS
+   - https://www.youtube.com/watch?v=OtkOltauY7k
 - Setting up Ubuntu Box in Virtual Box
 - Project: https://blog.chisomjude.net/how-to-set-up-a-lemp-stack-for-your-web-project
