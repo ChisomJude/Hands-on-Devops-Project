@@ -1,0 +1,1132 @@
+/*
+
+Tooplate 2133 Moso Interior
+
+https://www.tooplate.com/view/2133-moso-interior
+
+*/
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #ffd74f;
+  --secondary-color:              #f65129;
+  --section-bg-color:             #f9f9f9;
+  --site-footer-bg-color:         #36363e;
+  --custom-btn-bg-color:          #00a05d;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --border-color:                 #e9eaeb;
+
+  --twitter-color:                #1da1f2;
+  --facebook-color:               #1877f2;
+  --instagram-color:              #c13584;
+  --pinterest-color:              #e60023;
+  --whatsapp-color:               #128c7e;
+
+  --body-font-family:             'League Spartan', sans-serif;
+
+  --h1-font-size:                 62px;
+  --h2-font-size:                 48px;
+  --h3-font-size:                 36px;
+  --h4-font-size:                 32px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  20px;
+  --btn-font-size:                16px;
+  --copyright-font-size:          14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-thin:             100;
+  --font-weight-light:            300;
+  --font-weight-normal:           400;
+  --font-weight-semibold:         600;
+  --font-weight-bold:             700;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--body-font-family); 
+    padding-top: 70px;
+}
+
+/*---------------------------------------
+  TYPOGRAPHY               
+-----------------------------------------*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-semibold);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  line-height: normal;
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+a, 
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.tooplate-red {
+	color: var(--secondary-color);
+}
+.tooplate-green {
+	color: var(--custom-btn-bg-color);
+}
+
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background: var(--section-bg-color);
+}
+
+.section-small-title {
+  color: var(--custom-btn-bg-color);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-semibold);
+  display: block;
+}
+
+.section-overlay {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-block {
+  background: var(--primary-color);
+  border-top: 20px solid var(--secondary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+.featured-custom-block {
+  background: var(--border-color);
+}
+
+.shop-detail-custom-block {
+  background: transparent;
+  border-top: 0;
+  border-radius: 0;
+  padding: 30px;
+}
+
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.page-link {
+  border-color: var(--border-color);
+  border-radius: var(--border-radius-large);
+  color: var(--p-color);
+  font-size: var(--copyright-font-size);
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.page-item.active .page-link,
+.page-link:hover {
+  background: var(--secondary-color);
+  border-color: transparent;
+  color: var(--white-color);
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border: 0;
+  border-radius: var(--border-radius-large);
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: 5px;
+}
+
+
+/*---------------------------------------
+  CUSTOM LINK               
+-----------------------------------------*/
+.custom-link {
+  color: var(--p-color);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  padding-bottom: 2px;
+}
+
+.custom-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+  background: currentColor;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.custom-link:hover {
+  color: var(--primary-color);
+}
+
+.custom-link:hover::after {
+  background: var(--custom-btn-bg-color);
+}
+
+
+/*---------------------------------------
+  CUSTOM BADGE               
+-----------------------------------------*/
+.custom-badge {
+  background: var(--white-color);
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  color: var(--secondary-color);
+  font-size: var(--copyright-font-size);
+  font-weight: var(--font-weight-semibold);
+  padding: 10px 10px 6px 10px;
+}
+
+.custom-badge::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid var(--white-color);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  position: absolute;
+  top: -7px;
+  right: 0;
+  left: 0;
+}
+
+
+/*---------------------------------------
+  CUSTOM BUTTON               
+-----------------------------------------*/
+.custom-btn {
+  background: var(--custom-btn-bg-color);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: normal;
+  padding: 15px 20px;
+}
+
+.custom-btn:hover {
+  background: transparent;
+  border-color: var(--custom-btn-bg-color);
+  color: var(--custom-btn-bg-color);
+}
+
+.custom-border-btn {
+  background: transparent;
+  border: 2px solid var(--border-color);
+  color: var(--white-color);
+}
+
+.custom-border-btn:hover {
+  background: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--secondary-color);
+}
+
+
+/*---------------------------------------
+  NAVIGATION              
+-----------------------------------------*/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.3s;
+}
+
+.navbar-brand {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 20px 35px;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  color: var(--p-bg-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid var(--border-color);
+  display: inline-block;
+  color: var(--p-bg-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-menu li:last-child .dropdown-item {
+  border-bottom: 0;
+}
+
+.dropdown-item.active, 
+.dropdown-item:active,
+.dropdown-item:focus, 
+.dropdown-item:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.dropdown-toggle::after {
+  content: "\f282";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-size: var(--copyright-font-size);
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  left: 2px;
+  border: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: var(--dark-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before,
+.navbar-toggler .navbar-toggler-icon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--dark-color);
+  width: 30px;
+  height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+
+/*---------------------------------------
+  SITE HEADER              
+-----------------------------------------*/
+.site-header {
+  background-image: url('../images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+
+/*---------------------------------------
+  HERO              
+-----------------------------------------*/
+.hero-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  min-height: 580px;
+}
+
+@media screen and (min-width: 991px) {
+  .hero-section {
+    height: calc(100vh - 70px);
+  }
+}
+
+.hero-form {
+  background: var(--white-color);
+  border-radius: var(--border-radius-small);
+  padding: 40px;
+  padding-bottom: 16px;
+}
+
+.hero-icon,
+.contact-icon {
+  color: var(--secondary-color);
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 60px auto;
+}
+
+.hero-btn-link {
+  background: var(--primary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--h4-font-size);
+  width: 64px;
+  height: 64px;
+  line-height: 68px;
+  text-align: center;
+}
+
+.hero-btn-link:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
+
+/*---------------------------------------
+  ABOUT              
+-----------------------------------------*/
+.about-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.about-image {
+  display: block;
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.about-image-small {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
+/*---------------------------------------
+  FEATURED              
+-----------------------------------------*/
+.featured-section {
+  background-image: url('../images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.featured-icon {
+  font-size: var(--h5-font-size);
+}
+
+
+/*---------------------------------------
+  REVIEWS              
+-----------------------------------------*/
+.reviews-section {
+  background: var(--section-bg-color);
+}
+
+.reviews-carousel .owl-item img,
+.avatar-image {
+  border-radius: var(--border-radius-large);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.reviews-carousel .owl-nav {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.reviews-carousel .owl-nav button.owl-next, 
+.reviews-carousel .owl-nav button.owl-prev {
+  background: var(--white-color);
+  border-radius: var(--border-radius-large);
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.reviews-carousel .owl-nav button.owl-next:hover, 
+.reviews-carousel .owl-nav button.owl-prev:hover {
+  background: var(--secondary-color);
+}
+
+.reviews-carousel .owl-prev:hover span::before, 
+.reviews-carousel .owl-next:hover span::before {
+  color: var(--white-color);
+}
+
+.reviews-carousel .owl-prev span, 
+.reviews-carousel .owl-next span {
+  display: block;
+  color: transparent;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.reviews-carousel .owl-prev span::before, 
+.reviews-carousel .owl-next span::before {
+  font-family: bootstrap-icons;
+  display: block;
+  font-size: var(--h4-font-size);
+  color: var(--secondary-color);
+}
+
+.reviews-carousel .owl-prev span::before {
+  content: "\f12f";
+}
+
+.reviews-carousel .owl-next span::before {
+  content: "\f138";
+}
+
+.reviews-thumb {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-body {
+  padding: 50px 40px;
+}
+
+.reviews-bottom {
+  background: var(--secondary-color);
+  background: linear-gradient(180deg, rgba(246,81,41,1) 0%, rgba(255,190,140,1) 100%);
+  position: relative;
+  padding: 10px 36px;
+}
+
+.reviews-bottom-up::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 22px solid var(--secondary-color);
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  position: absolute;
+  top: -20px;
+  left: 36px;
+}
+
+.bi-star-fill {
+  color: var(--primary-color);
+}
+
+.reviews-section .custom-btn {
+  background: var(--facebook-color);
+}
+
+.reviews-section .custom-btn:hover {
+  background: transparent;
+  border-color: var(--facebook-color);
+  color: var(--facebook-color);
+}
+
+.reviews-bottom small {
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+
+/*---------------------------------------
+  SHOP              
+-----------------------------------------*/
+.shop-section {
+  background: var(--white-color);
+}
+
+.shop-listing-page .shop-section {
+  padding-bottom: 0;
+}
+
+.shop-thumb {
+  margin-bottom: 24px;
+}
+
+.shop-image-wrap {
+  position: relative;
+}
+
+.shop-image-wrap:hover .shop-btn-wrap {
+  opacity: 1;
+}
+
+.shop-icons-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.shop-icons {
+  background: var(--white-color);
+  border-radius: var(--border-radius-small);
+  padding: 20px 15px;
+}
+
+.shop-icon {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.shop-icon:last-child {
+  margin-bottom: 0;
+}
+
+.shop-pricing-text {
+  color: var(--secondary-color);
+}
+
+.shop-condition-text {
+  color: var(--custom-btn-bg-color);
+}
+
+.shop-image {
+  display: block;
+  border-radius: var(--border-radius-medium);
+}
+
+.shop-body {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.shop-btn-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.shop-btn {
+  background: var(--primary-color);
+  font-size: var(--copyright-font-size);
+  width: 100px;
+  height: 100px;
+  text-transform: uppercase;
+}
+
+.shop-btn:hover {
+  border-color: transparent;
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.shop-detail-bar {
+  padding: 20px;
+}
+
+.shop-listing-page .navbar-nav .nav-link.active,
+.shop-detail-page .navbar-nav .nav-link.active {
+  background: transparent;
+  color: var(--p-color);
+}
+
+.shop-listing-page .navbar-nav .nav-link.active:hover,
+.shop-detail-page .navbar-nav .nav-link.active:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+
+/*---------------------------------------
+  CONTACT               
+-----------------------------------------*/
+.contact-section {
+  background: var(--white-color);
+}
+
+.contact-form {
+  background: var(--section-bg-color);
+  border-radius: var(--border-radius-medium);
+  padding: 50px;
+}
+
+.contact-form label {
+  font-weight: var(--font-weight-semibold);
+}
+
+.google-map {
+  display: block;
+  border-radius: var(--border-radius-medium);
+}
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .input-group {
+  background-color: var(--white-color);
+  border: 2px solid var(--border-color);
+  border-radius: .25rem;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.custom-form .textarea-group label {
+  margin-top: 13px;
+}
+
+.custom-form label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.custom-form .form-control {
+  background-color: var(--white-color);
+  box-shadow: none;
+  border: 0;
+  color: var(--p-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+}
+
+.custom-form .form-control:hover,
+.custom-form .form-control:focus {
+  border-color: var(--secondary-color);
+}
+
+.custom-form button[type="submit"] {
+  background: var(--secondary-color);
+  border: none;
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--primary-color);
+  border-color: transparent;
+}
+
+
+/*---------------------------------------
+  FILTER FORM              
+-----------------------------------------*/
+.filter-form {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+  padding: 30px;
+}
+
+.filter-form-small-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-form .form-select {
+  border: 2px solid var(--border-color);
+}
+
+.filter-form .form-check-label {
+  color: var(--p-color);
+}
+
+
+/*---------------------------------------
+  SITE FOOTER              
+-----------------------------------------*/
+.site-footer {
+  background: var(--site-footer-bg-color);
+  padding-top: 0;
+}
+
+.site-footer h3 {
+  line-height: normal;
+}
+
+.site-footer h3 .custom-link,
+.site-footer .social-icon-link:hover {
+  color: var(--white-color);
+}
+
+.site-footer h3 .custom-link:hover {
+  color: var(--primary-color);
+}
+
+.copyright-text {
+  color: var(--section-bg-color);
+  font-size: var(--copyright-font-size);
+  margin-top: 10px;
+}
+
+.site-footer .social-icon-link {
+  margin-top: 10px;
+}
+
+
+/*---------------------------------------
+  SOCIAL ICON               
+-----------------------------------------*/
+.social-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-icon-link {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  display: block;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.social-icon-link:hover {
+  color: var(--secondary-color);
+}
+
+.social-icon-twitter {
+  color: var(--twitter-color);
+}
+
+.social-icon-facebook {
+  color: var(--facebook-color);
+}
+
+.social-icon-instagram {
+  color: var(--instagram-color);
+}
+
+.social-icon-pinterest {
+  color: var(--pinterest-color);
+}
+
+.social-icon-whatsapp {
+  color: var(--whatsapp-color);
+}
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero-form {
+    padding-bottom: 40px;
+  }
+
+  .page-link {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .navbar {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    padding: 15px 30px;
+    min-width: 125px;
+  }
+
+  .about-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .about-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-image-small {
+    width: 180px;
+    height: 180px;
+  }
+
+  .custom-block,
+  .contact-form {
+    padding: 30px;
+  }
+
+  .reviews-thumb {
+    margin-bottom: 24px;
+  }
+
+  .reviews-body {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .site-footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .page-link {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .about-image {
+    width: 205px;
+    height: 205px;
+  }
+
+  .about-image-small {
+    width: 145px;
+    height: 145px;
+  }
+
+  .copyright-text-wrap {
+    justify-content: center;
+  }
+}
