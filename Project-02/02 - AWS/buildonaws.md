@@ -166,3 +166,6 @@ Update your application code or environment configuration as needed.
 - AWS S3 and CloudFront:  https://www.youtube.com/watch?v=SS707jG4yZ8
 - AWS Elastic Beanstalk : https://www.youtube.com/watch?v=2BoVhej0QVI
 
+- Watch Project 1 Implementation Video - https://youtu.be/KRUm5v5bYf8
+- Reference Article for Project 1 - https://blog.chisomjude.net/step-by-step-guide-on-hosting-your-first-website-on-aws-using-s3-bucket-and-cloudfront
+
