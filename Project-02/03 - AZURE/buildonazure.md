@@ -58,7 +58,7 @@ The essence of this project is to familiarise with Azure, Create an Account, cre
 
 - ### Project 02 - Deploy a simple python app to Azure App Service
 
-- ## Resources
-Azure Services - https://www.youtube.com/watch?v=TJOwP5VhvAo 
-Azure Static Web Apps - https://www.youtube.com/watch?v=6uaiGqCwDgs
-Azure App Service - https://www.youtube.com/watch?v=ogO_ZZUssHE
+ ## Resources
+- Azure Services - https://www.youtube.com/watch?v=TJOwP5VhvAo 
+- Azure Static Web Apps - https://www.youtube.com/watch?v=6uaiGqCwDgs
+- Azure App Service - https://www.youtube.com/watch?v=ogO_ZZUssHE
