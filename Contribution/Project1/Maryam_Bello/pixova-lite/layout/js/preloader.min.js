@@ -1,0 +1,2 @@
+!function(a){"use strict";function b(){a("#page-loader .page-loader-inner").delay(500).fadeIn(10,function(){a(this).fadeOut(500,function(){a("#page-loader").fadeOut(500)})})}jQuery(window).load(function(a){b()})}(window.jQuery);
+//# sourceMappingURL=preloader.min.js.map

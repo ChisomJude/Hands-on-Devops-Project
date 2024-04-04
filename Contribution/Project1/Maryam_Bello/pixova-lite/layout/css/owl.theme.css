@@ -1,0 +1,130 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-controls {
+	text-align: center;
+}
+
+
+
+/* Styling pagination */
+.project-carousel .owl-controls {
+	margin: 45px auto;
+	height: 10px;
+}
+	.project-carousel .owl-controls .owl-page.active span {
+		background-color: #333;
+	}
+
+	.project-carousel .owl-prev,
+	.project-carousel .owl-next {
+		position: absolute;
+		top: 100%;
+		font-size: 24px;
+	}
+		.project-carousel .owl-prev {left: 48.5%;}
+		.project-carousel .owl-next {right: 48.5%;}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+.big-testimonial .owl-prev,
+.big-testimonial .owl-next {
+	font-size: 24px;
+	color: #000;
+	position: absolute;
+	top: 100%;
+}
+	.big-testimonial .owl-prev {
+		left: 48.5%;
+	}
+
+	.big-testimonial .owl-next {
+		right: 48.5%;
+	}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url('images/AjaxLoader.gif') no-repeat center center
+}
+
+.small-testimonial .owl-theme .owl-controls{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.small-testimonial .owl-controls.clickable {
+    margin: 10px 0;
+}
+
+.small-testimonial .owl-buttons {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 100%;
+}
+
+.small-testimonial .owl-buttons div {
+    background: none;
+    font-size: 36px;
+    color: #cbcbcb;
+}
+
+.small-testimonial .owl-prev,
+.small-testimonial .owl-next {
+    position: absolute;
+}
+    .small-testimonial .owl-next {
+        right: 1%;
+    }
+
+    .small-testimonial .owl-prev {
+        left: 1%;
+    }
