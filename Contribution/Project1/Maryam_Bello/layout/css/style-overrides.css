@@ -1,0 +1,162 @@
+/* Accent Color */
+h1.intro-cta-title:after,
+.single .intro-title:after,
+.blog-intro .intro-title:after,
+.light-section-heading:after,
+.pixova-pricing-table .featured .pixova-pricing-header,
+.pixova-button span.pixova-button-inner,
+.pixova-callout,
+#wp-calendar caption,
+input#submit,
+.wp-caption .wp-caption-text,
+div#buy-now,
+#buy-now .container-fluid,
+body .btn-cta-light,
+body .btn-cta-intro {
+	background-color: %1$s;
+}
+
+.pixova-comments a,
+h1.intro-cta-title,
+.btn.btn-cta-intro-outline.focus,
+.pixova-date,
+.pixova-pie-chart-custom-icon i,
+.pixova-team-member-description,
+#cancel-comment-reply-link,
+.about-text.testimonial span,
+.error-404 .page-title,
+.no-results .page-title,
+.search-results .page-title,
+.pixova-lite-breadcrumbs a,
+.footer-heart-icon,
+.big-testimonial .media-heading,
+.pixova-person-name,
+.btn.focus,
+.entry-meta a:hover {
+	color: %1$s;
+}
+::selection {
+	background: %1$s;
+}
+
+::-moz-selection {
+	background: %1$s;
+}
+
+.btn.btn-cta-intro-outline.focus,
+.pixova-button span.pixova-button-inner,
+
+.about-text.testimonial,
+blockquote,
+body .btn-cta-light {
+	border-color: %1$s;
+}
+
+#awesome-loader .loader-holder svg path.ip-loader-circle {
+	stroke: %1$s;
+}
+
+/* Heading Color */
+.light-section-heading,
+.section-sub-heading,
+.pixova-blogpost-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: %2$s;
+}
+
+/* Text Color */
+.contact-info-details,
+.contact-info-details-phone,
+.contact-info-details-email,
+.pixova-blog-posts p,
+.blog .entry-content p,
+.widget_categories a,
+.widget_recent_entries a,
+.widget_pages a,
+.comment-content p,
+.entry-meta,
+.page-numbers a,
+.page-numbers span,
+.nav-links .page-numbers,
+.widget_archive a,
+.recentcomments a,
+.widget_meta a,
+.entry-content p,
+.entry-content-tags li,
+.entry-content-tags li a,
+body {
+	color: %3$s;
+}
+/* Hover Color */
+.btn.btn-cta-intro-outline:focus,
+.btn.btn-cta-intro-outline:hover,
+body a:focus,
+#footer .menu li a:hover,
+.pixova_lite_widget_social_media li a:hover,
+.pixova-pricing-table .pixova-pricing-content ul li.checked:before,
+.mobile a:focus,
+.mobile-nav a:hover,
+a:hover,
+blockquote:before,
+#footer .widget a:hover,
+#footer .footer-copyright a:hover,
+#team .pixova-team-member-icon a:hover,
+.logo:hover,
+.main-navigation a:hover,
+.btn:focus, .btn:hover,
+.intro-tagline a:hover ,
+.recentcomments a:hover,
+.widget_archive a:hover,
+.widget_categories a:hover,
+.widget_meta a:hover,
+.widget_pages a:hover,
+.widget_recent_entries a:hover {
+	color: %4$s;
+}
+
+body .btn-cta-intro:hover,
+.footer-social-icon:hover,
+.pixova-button:active,
+.pixova-button:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.tagcloud a:focus,
+.tagcloud a:hover,
+#cancel-comment-reply-link:before,
+.footer-photos a:before,
+body .btn-cta-dark:hover,
+body .btn-cta-light:hover {
+	background-color: %4$s;
+}
+.tagcloud a:hover,
+.comment-reply-link:hover,
+.btn.btn-cta-intro-outline:focus,
+.btn.btn-cta-intro-outline:hover,
+.footer-social-icon:hover,
+.wpcf7-form-control-wrap input:focus,
+.wpcf7-form-control-wrap textarea:focus,
+.pirate_forms_wrap input:focus,
+.pirate_forms_wrap textarea:focus,
+.comment-reply-link:focus,
+.tagcloud a:focus,
+#respond input:focus,
+#respond textarea:focus,
+body .btn-cta-dark:hover,
+body .btn-cta-light:hover {
+	border-color: %4$s;
+}
+
+/* Footer Background Color */
+#footer .footer-copyright-container {
+	background-color: %5$s;
+}
+
+/* Footer Widget Background Color */
+#footer {
+	background-color: %6$s;
+}
