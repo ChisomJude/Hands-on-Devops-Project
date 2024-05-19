@@ -10,8 +10,13 @@ This repo consists of step to step project-based approach to master DevOps Conce
 > - Webservers (Nginx)
 > - Cloud (AWS /Azure)
 > - Terraform
+> - Kubernetes
 
-Do you want to contribute or Join in - [Send a mail](mailto:info@chisomjude.net) 
+![image](https://github.com/ChisomJude/Hands-on-Devops-Project/assets/47423151/e9e3e178-5706-4713-bfa5-2156e785f309)
+
+Do you want to contribute or Join in further classes, please reach out  - [Send a mail](mailto:info@chisomjude.net) 
+
+
 
 
 
