@@ -1,4 +1,4 @@
-# Project 2: Highly Available Web Application with Load Balancer
+# Highly Available Web Application with Load Balancer
 
 ## Objective
 Deploy a fault-tolerant web application using an Application Load Balancer (ALB) to distribute traffic across two EC2 instances in different Availability Zones (AZs).
@@ -6,14 +6,14 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
 ## Architecture Components
 - **VPC** with public subnets in 2 AZs
 - **Internet Gateway** (IGW) for public access
-- **EC2 instances** running Nginx/PHP
+- **EC2 instances** running Nginx
 - **Application Load Balancer** (ALB)
 - **Security Groups** for traffic control
 
 ## Prerequisites
 - AWS account with IAM permissions
 - Basic understanding of EC2 and VPC
-- Sample PHP app in GitHub (`github.com/chisomjude/samplewebapp`)
+- Sample static web app in GitHub (`github.com/chisomjude/samplewebapp`)
 
 ---
 
@@ -56,20 +56,19 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
      ```bash
      #!/bin/bash
      sudo yum update -y
-     sudo amazon-linux-extras enable php8.2 nginx1
-     sudo yum install -y php-cli php-fpm php-mysqlnd nginx git
+     sudo yum install -y nginx git
      
      # Clone Samplewebapp
      sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/html
      sudo chown -R nginx:nginx /usr/share/nginx/html
      
      # Start services
-     sudo systemctl start nginx php-fpm
-     sudo systemctl enable nginx php-fpm
+     sudo systemctl start nginx
+     sudo systemctl enable nginx
      ```
 
-2. **Launch EC2 Instance2 **:
-   - Repeat same configuration in `Public-Subnet-B`
+2. **Launch EC2 Instance 2**:
+   - Repeat the same configuration in `Public-Subnet-B`
 
 3. **Configure Security Groups**:
    - Name: `Web-Server-SG`
@@ -92,7 +91,7 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
    - Name: `Web-Servers-TG`
    - Protocol: HTTP (80)
    - Target type: Instance
-   - Health check path: `/index.php`
+   - Health check path: `/index.html`
 
 3. **Register Targets**:
    - Select both EC2 instances
@@ -103,7 +102,7 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
 ### 4. Test High Availability
 1. **Access Application**:
    - Copy ALB DNS name (e.g., `HA-Web-ALB-123456.us-east-1.elb.amazonaws.com`)
-   - Open in browser - should show your PHP app
+   - Open in browser - should show the static webpage from `index.html`
 
 2. **Simulate Failure**:
    - Stop one EC2 instance
@@ -114,7 +113,7 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
 
 ---
 
-## Troubleshooting Check if any issues
+## Troubleshooting
 - **Instance not healthy**:
   - Check security groups allow HTTP/80 from ALB
   - Verify user data script ran successfully (`/var/log/cloud-init-output.log`)
@@ -126,3 +125,4 @@ Deploy a fault-tolerant web application using an Application Load Balancer (ALB)
 - Delete ALB and Target Group
 - Terminate EC2 instances
 - Delete VPC (will auto-delete subnets/IGW)
+
