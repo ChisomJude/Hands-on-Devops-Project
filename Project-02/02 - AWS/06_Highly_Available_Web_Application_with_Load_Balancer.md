@@ -1,7 +1,7 @@
 # Project 2: Highly Available Web Application with Load Balancer
 
 ## Objective
-Deploy a fault-tolerant PHP web application using an Application Load Balancer (ALB) to distribute traffic across two EC2 instances in different Availability Zones (AZs).
+Deploy a fault-tolerant web application using an Application Load Balancer (ALB) to distribute traffic across two EC2 instances in different Availability Zones (AZs).
 
 ## Architecture Components
 - **VPC** with public subnets in 2 AZs
@@ -13,7 +13,7 @@ Deploy a fault-tolerant PHP web application using an Application Load Balancer (
 ## Prerequisites
 - AWS account with IAM permissions
 - Basic understanding of EC2 and VPC
-- Sample PHP app in GitHub (`github.com/chisomjude/sampleweb`)
+- Sample PHP app in GitHub (`github.com/chisomjude/samplewebapp`)
 
 ---
 
@@ -59,8 +59,8 @@ Deploy a fault-tolerant PHP web application using an Application Load Balancer (
      sudo amazon-linux-extras enable php8.2 nginx1
      sudo yum install -y php-cli php-fpm php-mysqlnd nginx git
      
-     # Clone sample app
-     sudo git clone https://github.com/chisomjude/sampleweb /usr/share/nginx/html
+     # Clone Samplewebapp
+     sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/html
      sudo chown -R nginx:nginx /usr/share/nginx/html
      
      # Start services
@@ -68,7 +68,7 @@ Deploy a fault-tolerant PHP web application using an Application Load Balancer (
      sudo systemctl enable nginx php-fpm
      ```
 
-2. **Launch EC2 Instance 2**:
+2. **Launch EC2 Instance2 **:
    - Repeat same configuration in `Public-Subnet-B`
 
 3. **Configure Security Groups**:
@@ -114,7 +114,7 @@ Deploy a fault-tolerant PHP web application using an Application Load Balancer (
 
 ---
 
-## Troubleshooting
+## Troubleshooting Check if any issues
 - **Instance not healthy**:
   - Check security groups allow HTTP/80 from ALB
   - Verify user data script ran successfully (`/var/log/cloud-init-output.log`)
