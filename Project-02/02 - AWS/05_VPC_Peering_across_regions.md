@@ -38,7 +38,7 @@ Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to q
 ### 3. Deploy Resources
 
 #### In VPC-A (Web Server):
-- **Launch an EC2 instance** in the public subnet.
+- **Launch an EC2 instance** in the public subnet. (Use AMAZON LINUX T2 Medium)
 - **SSH into the instance and install PHP + Nginx:** use script below  
 
 ```bash
