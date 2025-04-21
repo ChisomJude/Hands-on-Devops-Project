@@ -18,8 +18,9 @@ Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to q
 #### VPC-B (Database VPC)
 - **Region:** `us-west-2`
 - **CIDR:** `192.168.0.0/16`
-- **Private Subnet:** `192.168.1.0/24` (`us-west-2a`)
-- **NAT Gateway:** For outbound updates
+- **Public Subnet:** `192.168.1.0/24` (`us-west-2a`) 
+***However, this is to avoid the cost for NAT on the Private subnet. In a prod scenario, use Private subnet and NAT Gateway***
+
 
 ---
 
@@ -75,9 +76,10 @@ sudo systemctl restart nginx php-fpm
 
 ---
 
-## Configure a Bastion Host (Jump Server)
+## Configure a Bastion Host (Jump Server)- OPTIONAL
+***This step (#step 1) is only necessary if your DB Host is on a private Subnet; if not, skip step 2 below***
 
-Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be restricted. You will need to connect via a **secure jump server** to access the DB server.
+Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be restricted from IP addresses not in the same subnet. You will need to connect via a **secure jump server** to access the DB server.
 
 ### Step 1: Launch a Bastion Host in VPC-A
 
