@@ -47,7 +47,7 @@ Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to q
 sudo yum update -y
 
 # Install required packages
-sudo yum install -y nginx php php-fpm git mariadb-server
+sudo yum install -y nginx php php-fpm git mariadb105-server
 
 # Enable and start services
 sudo systemctl enable nginx php-fpm mariadb
