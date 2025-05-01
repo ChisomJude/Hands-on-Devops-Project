@@ -47,14 +47,13 @@ Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to q
 sudo yum update -y
 
 # Install required packages
-sudo yum install -y nginx php php-fpm git mariadb105-server
+sudo yum install -y nginx php php-fpm git
+sudo yum install -y php-mysqlnd
 
 # Enable and start services
-sudo systemctl enable nginx php-fpm mariadb
-sudo systemctl start nginx php-fpm mariadb
+sudo systemctl enable nginx php-fpm 
+sudo systemctl start nginx php-fpm 
 
-# Secure MariaDB installation (optional but recommended)
-sudo mysql_secure_installation
 
 # Clone the PHP application to /usr/share/nginx/web
 sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/web
@@ -163,9 +162,9 @@ Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be 
    # Update system
    sudo yum update -y  # (For Amazon Linux/RHEL)
    
-   # Install MySQL Server
+   # Install SQL Server
    sudo yum install -y mariadb105-server  # (For Amazon Linux/RHEL)
-   sudo yum install -y php-mysqlnd
+   
 
    
    # Start MySQL
@@ -199,7 +198,7 @@ Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be 
    ```
 
 #### Ensure DB server can connect to all IPs
-Run this `sudo nano /etc/my.cnf.d/mariadb-server.cnf`  and uncomment `bind_address` then restart mariadb using `sudo systemctl restart mariadb`
+Run this `sudo nano /etc/my.cnf.d/mariadb-server.cnf`  search and uncomment `bind_address: 0.0.0.0` then restart mariadb using `sudo systemctl restart mariadb`
 
 
 
