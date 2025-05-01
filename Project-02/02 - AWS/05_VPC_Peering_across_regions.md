@@ -164,22 +164,29 @@ Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be 
    sudo yum update -y  # (For Amazon Linux/RHEL)
    
    # Install MySQL Server
-   sudo yum install -y mysql-server  # (For Amazon Linux/RHEL)
+   sudo yum install -y mariadb105-server  # (For Amazon Linux/RHEL)
+   sudo yum install -y php-mysqlnd
+
    
    # Start MySQL
-   sudo systemctl start mysqld
-   sudo systemctl enable mysqld
+   sudo systemctl start mariadb
+   sudo systemctl enable mariadb
    ```
 
 3. **Create a Database and Users Table:**
    ```bash
    mysql -u root -p
    ```
+   # Create DB user and pass for webapp
+   CREATE DATABASE user_db;
+   CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'webpass';
+   GRANT ALL PRIVILEGES ON user_db.* TO 'webuser'@'localhost';
+   FLUSH PRIVILEGES;
 
-   Inside MySQL:
+   Inside MySQL or Mariadb condole:
    ```sql
-   CREATE DATABASE webapp;
-   USE webapp;
+  
+   USE user_db;
 
    CREATE TABLE users (
        id INT AUTO_INCREMENT PRIMARY KEY,
