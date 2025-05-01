@@ -56,15 +56,62 @@ sudo systemctl start nginx php-fpm mariadb
 # Secure MariaDB installation (optional but recommended)
 sudo mysql_secure_installation
 
-# Clone the PHP application to /usr/share/nginx/html
-sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/html
+# Clone the PHP application to /usr/share/nginx/web
+sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/web
 
 # Set proper ownership and permissions
-sudo chown -R nginx:nginx /usr/share/nginx/html
-sudo chmod -R 755 /usr/share/nginx/html
+sudo chown -R nginx:nginx /usr/share/nginx/web
+sudo chmod -R 755 /usr/share/nginx/web
+
+# setup port 80 (index.html) 
+nano /etc/nginx/conf.d/web80.conf
+#+++++++++++++++++++++++++++++++++++++++++++++++
+server {
+    listen 80;
+    server_name _;
+
+    root /usr/share/nginx/web;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+#+++++++++++++++++++++++++++++++++++++++++++++++
+
+# set up port 8080, create the file and paste the script below
+
+nano /etc/nginx/conf.d/web8080.conf
+
+#+++++++++++++++++++++++++++++++++++++++++++++++
+server {
+    listen 8080;
+    server_name _;
+
+    root /usr/share/nginx/web;
+    index index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass   unix:/run/php-fpm/www.sock;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Restart Nginx and PHP-FPM to apply changes
-sudo systemctl restart nginx php-fpm
+sudo systemctl restart php-fpm
+sudo systemctl restart nginx
+
+
 
 ```
 
