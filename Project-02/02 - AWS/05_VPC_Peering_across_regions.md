@@ -47,11 +47,14 @@ Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to q
 sudo yum update -y
 
 # Install required packages
-sudo yum install -y nginx php php-fpm git mysql
+sudo yum install -y nginx php php-fpm git mariadb-server
 
 # Enable and start services
-sudo systemctl enable nginx php-fpm
-sudo systemctl start nginx php-fpm
+sudo systemctl enable nginx php-fpm mariadb
+sudo systemctl start nginx php-fpm mariadb
+
+# Secure MariaDB installation (optional but recommended)
+sudo mysql_secure_installation
 
 # Clone the PHP application to /usr/share/nginx/html
 sudo git clone https://github.com/chisomjude/samplewebapp /usr/share/nginx/html
@@ -62,6 +65,7 @@ sudo chmod -R 755 /usr/share/nginx/html
 
 # Restart Nginx and PHP-FPM to apply changes
 sudo systemctl restart nginx php-fpm
+
 ```
 
 ### Security Group Configuration
