@@ -1,4 +1,4 @@
-# VPC Peering for Cross-Region Communication
+su# VPC Peering for Cross-Region Communication
 
 ## Objective
 Connect two VPCs (in different regions) to allow a PHP web app in **VPC-A** to query a MySQL database in **VPC-B**.
@@ -197,6 +197,12 @@ Since **VPC-B (Database VPC)** is in a **private subnet**, SSH access should be 
    INSERT INTO users (username, password) VALUES ('user1', 'user1');
    INSERT INTO users (username, password) VALUES ('chisom', 'chisom');
    ```
+
+#### Ensure DB server can connect to all IPs
+Run this `sudo nano /etc/my.cnf.d/mariadb-server.cnf`  and uncomment `bind_address` then restart mariadb using `sudo systemctl restart mariadb`
+
+
+
 
 ---
 
